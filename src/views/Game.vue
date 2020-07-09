@@ -1,7 +1,5 @@
 <template>
- 
-    <Janken></Janken>
-  
+  <Janken></Janken>
 </template>
 
 <script>
