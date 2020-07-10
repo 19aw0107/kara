@@ -5,9 +5,14 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    score: {syouhai:"", count:"0"},//配列を作って1回目2回目3回目の勝ち負けの数値を保存する。
+    score: {syouhai:"0", count:"0"}
+    //syouhai:[],
+    //count:0,//配列を作って1回目2回目3回目の勝ち負けの数値を保存する。score: {syouhai:"0", count:"0"}
   },
   mutations: {
+    increment(state){
+      state.count++
+    }
   },
   actions: {
   },
@@ -15,7 +20,7 @@ export default new Vuex.Store({
   },
   getters:{
     count(state){
-      return state.count
+      return state.score.syouhai
     }
   }
 })

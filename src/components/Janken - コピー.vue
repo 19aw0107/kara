@@ -64,7 +64,6 @@ export default {
             let selectNum = parseInt(button.value, 10); /* 第一引数に渡した値を10進数に変換して返す */
             let kekkaNum = this.decisionJanken(selectNum, resultNum);
             window.console.log(kekkaNum);
-            this.$store.commit('increment');
             /*let button = e.target;//e.target
             window.console.log(this.src);
             let resultNum = parseInt(this.imgList.indexOf(this.src), 10);
