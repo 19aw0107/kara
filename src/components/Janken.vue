@@ -2,7 +2,7 @@
 <div class="hello">
     <h1>Janken.vue</h1>
     <button v-on:click="gameStart" type="button" id="gameStart">ゲームスタート</button>
-    <p>{{ $store.state.score }}</p><!--ここに結果を表示$store.state.score-->
+    <p>{{ $store.state.score}}</p><!--ここに結果を表示$store.state.score-->
     <div class="imgArea"><img v-bind:src="src" alt=""></div>
     <ul>
         <li>
@@ -64,7 +64,7 @@ export default {
             let selectNum = parseInt(button.value, 10); /* 第一引数に渡した値を10進数に変換して返す */
             let kekkaNum = this.decisionJanken(selectNum, resultNum);
             window.console.log(kekkaNum);
-            this.$store.commit('increment');
+            this.$store.commit('increment',{kekkaNum});
             /*let button = e.target;//e.target
             window.console.log(this.src);
             let resultNum = parseInt(this.imgList.indexOf(this.src), 10);

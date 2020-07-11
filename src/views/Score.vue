@@ -1,13 +1,12 @@
 <template>
-  <h1>成績</h1>
+  <Seiseki></Seiseki>
 </template>
-
 <script>
-//import Janken from '@/components/Janken'
-/*export default {
+import Seiseki from '@/components/Seiseki'
+export default {
   name: 'Score',
   components: {
-    
+    Seiseki
   }
-}*/
+}
 </script>
