@@ -5,7 +5,7 @@
         <button v-on:click="gameReset" type="button" id="gameStart">リセット</button>
     <!--<p>{{ $store.state.score}}</p>ここに結果を表示$store.state.score-->
     <!--<p>{{$store.state}}</p>-->
-        <p>{{ $store.state.score[1] }}</p>
+        <!--<p>{{ $store.state.score[1] }}</p>-->
         <ul>
             <li v-for="(scores, i) of $store.state.scores" :key='scores'>
                 {{ (i + 1) }}回目は{{ $store.state.scores[i] }}
