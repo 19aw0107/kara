@@ -24,7 +24,7 @@ export default new Vuex.Store({
       }else{
         state.scores.push("負け");
       }
-    }
+    }//これはスコアでやった方がいい？7.13
     //increment(state,payload){
       //state.syouhai = state.syouhai + "," + payload.kekkaNum
     //}
