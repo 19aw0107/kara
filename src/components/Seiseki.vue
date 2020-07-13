@@ -27,6 +27,7 @@ export default {
             this.$store.state.score = [];//空にします。
             this.$store.state.scores = [];//空にします。
             //this.items.length = 0;でもリセット出来るが、リアクティブにならない。 7.13
+            //this.items.splice(0) 7.13
         }
         }
     }
