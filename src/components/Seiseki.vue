@@ -25,6 +25,7 @@ export default {
     methods:{
         gameReset() { //リセットボタンが押されたときの処理
             this.$store.state.score = [];//空にします。
+            this.$store.state.scores = [];//空にします。
         }
         }
     }
